@@ -16,14 +16,14 @@ workflow "Create Pull Request" {
 }
 
 action "Create New Pull Request" {
-  uses = "vsoch/pull-request-action@master"
+  uses = "15gifts/github-actions/raise-pr-action@master"
   secrets = [
     "GITHUB_TOKEN"
   ]
   env = {
     BRANCH_FROM = "master"
     BRANCH_TO = "develop"
-     PULL_REQUEST_TITLE="master -> develop"
+    PULL_REQUEST_TITLE="master -> develop"
     PULL_REQUEST_BODY: "This is an automated pull request to update `develop` with the latest code from `master`",
     PULL_REQUEST_DRAFT: "false"
   }

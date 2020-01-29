@@ -1,0 +1,28 @@
+name: 'Notify slack channel'
+description: 'Pass a message to a slack channel'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
+    required: true
+  url:
+    description: 'The url for the hook configured in slack'
+    required: true
+  channel:
+    description: 'A channel in your slack workspace'
+    required: false
+    default: '#alerts'
+  username:
+    description: 'The username to display with the message'
+    required: false
+    default: 'github-actions'
+  icon-emoji:
+    description: 'The emoji to diplay with the message'
+    required: false
+    default: ':robot_face:'
+  message:
+    description: 'A message to send to the channel'
+    required: false
+    default: 'Released'
+runs:
+  using: 'node12'
+  main: 'index.js'

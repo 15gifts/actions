@@ -1,0 +1,17 @@
+name: 'Toggle approvals'
+description: 'Toggle Approvals on and off in a repos'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API and change approvals settings. Needs admin rights on the repos'
+    required: true
+  approvals_count:
+    description: 'Can be an npm package name or git path to a repo'
+    required: false
+    default: '2'
+  toggle:
+    description: 'Toggle the approvals on or off'
+    required: false
+    default: 'on'
+runs:
+  using: 'node12'
+  main: 'index.js'

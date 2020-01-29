@@ -1,0 +1,18 @@
+name: 'Notify slack channel'
+description: 'Pass a message to a slack channel'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
+    required: true
+  filename:
+    description: 'The name of the file you want to edit or create'
+    required: true
+  keys:
+    description: 'A list of keys you want to modify'
+    required: true
+  values:
+    description: 'A list of values to map to the provided keys'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'

@@ -1,0 +1,27 @@
+name: 'Update dependancy version'
+description: 'Update a package to version based on current branch name'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
+    required: true
+  package:
+    description: 'Can be an npm package name or git path to a repo'
+    required: true
+  master-tag:
+    description: 'Can be a package version (@latest/@2.2), commit hash (#260362cc3b8b3e4cbc7997), tag(#next) or branch(#develop) used on master branches/prs'
+    required: false
+    default: '#latest'
+  release-tag:
+    description: 'Can be a package version (@latest/@2.2), commit hash (#260362cc3b8b3e4cbc7997), tag(#next) or branch(#develop) used on release branches/prs'
+    required: false
+    default: '#next'
+  develop-tag:
+    description: 'Can be a package version (@latest/@2.2), commit hash (#260362cc3b8b3e4cbc7997), tag(#next) or branch(#develop) used on develop branches/prs'
+    required: false
+    default: '#develop'
+outputs:
+  version:
+    description: 'The version of the dependancy to use in npm install'
+runs:
+  using: 'node12'
+  main: 'index.js'

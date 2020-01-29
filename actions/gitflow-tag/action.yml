@@ -1,0 +1,21 @@
+name: 'Tags the repo according to gitflow'
+description: 'Returns an npm command for updating the tag'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
+    required: true
+  use-npm:
+    description: 'Use npm version cli tooling'
+    required: false
+    default: 'true'
+  commit-message-split:
+    description: 'The message used to decide between a minor or patch release'
+    required: false
+    default: '/release'
+
+outputs:
+  version:
+    description: 'The npm command to run'
+runs:
+  using: 'node12'
+  main: 'index.js'

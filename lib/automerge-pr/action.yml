@@ -1,0 +1,13 @@
+name: 'Automerge PR'
+description: 'Raises a PR from one branch to another and auto merge if there aren't any conflicts'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API and change approvals settings. Needs admin rights on the repos'
+    required: true
+  base:
+    description: 'The branch to merge into'
+    required: false
+    default: 'develop'
+runs:
+  using: 'node12'
+  main: 'index.js'

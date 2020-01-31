@@ -1,5 +1,5 @@
 name: 'Automerge PR'
-description: 'Raises a PR from one branch to another and auto merge if there aren't any conflicts'
+description: 'Raises a PR from one branch to another and auto merge if there arent any conflicts'
 inputs:
   github-token:
     description: 'Secret token to access githubs octkit API and change approvals settings. Needs admin rights on the repos'

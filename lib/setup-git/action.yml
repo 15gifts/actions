@@ -1,0 +1,17 @@
+name: 'Configure git'
+description: 'Configures required git values for a workflow'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
+    required: true
+  name:
+    description: 'The name to set'
+    required: false
+    default: 'Github action'
+  email:
+    description: 'The email to set'
+    required: false
+    default: 'action@github.com'
+runs:
+  using: 'node12'
+  main: 'index.js'

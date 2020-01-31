@@ -19,9 +19,6 @@ inputs:
     description: 'Can be a package version (@latest/@2.2), commit hash (#260362cc3b8b3e4cbc7997), tag(#next) or branch(#develop) used on develop branches/prs'
     required: false
     default: '#develop'
-outputs:
-  version:
-    description: 'The version of the dependancy to use in npm install'
 runs:
   using: 'node12'
   main: 'index.js'

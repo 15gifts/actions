@@ -2,7 +2,7 @@
 A collection of useful custom github actions
 
 ## Usage
-Refer to [/actions](/actions)
+Refer to [/lib](/lib)
 
 Each action has a config.yml that outlines the inputs the actions accept
 

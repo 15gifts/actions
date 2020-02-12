@@ -1,0 +1,21 @@
+name: 'Toggle status checks'
+description: 'Toggle Status checks on and off in a repos'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API and change approvals settings. Needs admin rights on the repos'
+    required: true
+  toggle:
+    description: 'Toggle the approvals on or off'
+    required: false
+    default: 'on'
+  checks:
+    description: 'A list of checks to enable'
+    required: false
+    default: ''
+outputs:
+  checks:
+    description: An array of the checks active before the action runs, useful for re-enabling any configured checks
+
+runs:
+  using: 'node12'
+  main: 'index.js'

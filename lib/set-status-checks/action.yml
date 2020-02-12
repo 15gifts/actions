@@ -7,7 +7,7 @@ inputs:
   checks:
     description: 'A list of checks to enable'
     required: false
-    default: ''
+    default: '[]'
 outputs:
   checks:
     description: An array of the checks active before the action runs, useful for re-enabling any configured checks

@@ -1,13 +1,9 @@
-name: 'Toggle status checks'
-description: 'Toggle Status checks on and off in a repos'
+name: 'Set status checks'
+description: 'Set status checks for the current branch'
 inputs:
   github-token:
     description: 'Secret token to access githubs octkit API and change approvals settings. Needs admin rights on the repos'
     required: true
-  toggle:
-    description: 'Toggle the approvals on or off'
-    required: false
-    default: 'on'
   checks:
     description: 'A list of checks to enable'
     required: false

@@ -3,7 +3,12 @@
   "version": "0.0.1",
   "description": "A collection of github actions",
   "main": "n/a",
-  "scripts": {},
+  "scripts": {
+    "lint": "esw lib/ --ext js",
+    "lint:fix": "esw lib/ --ext js --fix",
+    "lint:watch": "esw lib/ --ext js -w --fix --cache"
+
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/15gifts/github-actions.git"
@@ -15,7 +20,8 @@
   },
   "homepage": "https://github.com/15gifts/github-actions#readme",
   "devDependencies": {
-    "@15gifts/eslint-config": "^1.0.0"
+    "@15gifts/eslint-config": "^1.0.0",
+    "eslint-watch": "^6.0.1"
   },
   "dependencies": {
     "@actions/core": "^1.2.1",

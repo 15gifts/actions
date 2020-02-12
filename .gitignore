@@ -1,0 +1,22 @@
+/node_modules
+/out
+/coverage
+bundle.js
+serverConfig.json
+npm-debug.log
+.nyc_output
+/coverage
+/dist
+/htdocs
+.eslintcache
+.vscode
+
+# IntelliJ
+*.iml
+/.idea
+yarn-error.log
+npm-debug.log
+.DS_Store
+/.cache-loader
+/partners/**/partnerServerConfig.json
+stats.json

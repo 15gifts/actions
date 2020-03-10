@@ -1,0 +1,22 @@
+name: 'Repository dispatch'
+description: 'Trigger an event in another repos'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
+    required: true
+  repo:
+    description: 'The name of the repos'
+    required: true
+  owner:
+    description: 'The owner of the repos'
+    required: true
+  event-type:
+    description: 'The type of event'
+    required: false
+    default: 'run'
+  payload:
+    description: 'An object containing the payload to send with the event as the client_payload'
+    required: false
+runs:
+  using: 'node12'
+  main: 'index.js'

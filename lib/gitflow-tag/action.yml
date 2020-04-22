@@ -11,7 +11,7 @@ inputs:
   commit-message-split:
     description: 'The message used to decide between a minor or patch release'
     required: false
-    default: '/release'
+    default: 'release/'
 
 outputs:
   version:

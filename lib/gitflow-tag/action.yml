@@ -12,6 +12,10 @@ inputs:
     description: 'The message used to decide between a minor or patch release'
     required: false
     default: 'release/'
+  logic-gate-negative:
+    description: 'Whether commit-message-split logic is a negative or positive check'
+    required: false
+    default: 'false'
 
 outputs:
   version:

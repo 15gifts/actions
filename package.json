@@ -21,7 +21,7 @@
   "devDependencies": {
     "@15gifts/eslint-config": "^1.0.0",
     "eslint-watch": "^6.0.1",
-    "minimist": ">=0.2.1"
+    "minimist": ">=1.2.3"
   },
   "dependencies": {
     "@actions/core": "^1.2.1",

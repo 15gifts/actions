@@ -1,0 +1,21 @@
+name: Notify OpsGenie aboout an incident
+description: Create or update an alert in OpsGenie
+inputs:
+  api-key:
+    description: OpsGenie API key
+    required: true
+  entity:
+    description: Entity to use in the OpsGenie alert (for example, "vinyl")
+    required: true
+  message:
+    description: Alert message
+    required: true
+  description:
+    description: Alert description
+    required: false
+  alias:
+    description: Alert alias, used for de-duping the alerts
+    required: false
+runs:
+  using: 'node12'
+  main: 'index.js'

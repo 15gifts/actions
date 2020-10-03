@@ -9,7 +9,7 @@ inputs:
                  the alert will be automatically closed upon a successful consecutive job completion.
     required: false
   job-status:
-    description: Status of the current job, usually ${{ job.status }}
+    description: Status of the current job, usually "job.status"
     required: true
   entity:
     description: Entity to use in the OpsGenie alert (for example, "vinyl")

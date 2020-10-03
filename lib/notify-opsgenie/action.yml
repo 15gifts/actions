@@ -1,15 +1,11 @@
 name: Notify OpsGenie aboout an incident
-description: Create or update an alert in OpsGenie
+description: Create or close an alert in OpsGenie depending on the job status
 inputs:
   api-key:
     description: OpsGenie API key
     required: true
-  manage-alert:
-    description: Enables alert management mode. In this mode, the alert alias becomes fixed to "REPO + JOB NAME" and
-                 the alert will be automatically closed upon a successful consecutive job completion.
-    required: false
   job-status:
-    description: Status of the current job, usually "job.status"
+    description: Status of the current job, just pass in "job.status" context
     required: true
   entity:
     description: Entity to use in the OpsGenie alert (for example, "vinyl")
@@ -21,7 +17,8 @@ inputs:
     description: Alert description
     required: false
   alias:
-    description: Alert alias, used for de-duping the alerts. Message will be used as alias, if alias isn't provided explicitly. Ignored if "manage-alert" is set to true.
+    description: Alert alias, used for de-duping the alerts in OpsGenie. If not specified, current repo + job id would be used. 
+                 Alias is used to find an alert to close if the job was successful.
     required: false
 runs:
   using: 'node12'

@@ -4,6 +4,13 @@ inputs:
   api-key:
     description: OpsGenie API key
     required: true
+  manage-alert:
+    description: Enables alert management mode. In this mode, the alert alias becomes fixed to "REPO + JOB NAME" and
+                 the alert will be automatically closed upon a successful consecutive job completion.
+    required: false
+  job-status:
+    description: Status of the current job, usually ${{ job.status }}
+    required: true
   entity:
     description: Entity to use in the OpsGenie alert (for example, "vinyl")
     required: true
@@ -14,7 +21,7 @@ inputs:
     description: Alert description
     required: false
   alias:
-    description: Alert alias, used for de-duping the alerts
+    description: Alert alias, used for de-duping the alerts. Message will be used as alias, if alias isn't provided explicitly. Ignored if "manage-alert" is set to true.
     required: false
 runs:
   using: 'node12'

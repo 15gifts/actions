@@ -1,0 +1,12 @@
+name: 'Get a semantic release label'
+description: 'Get a semantic release label from the PR being merged into the master branch'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
+    required: true
+outputs:
+  match:
+    description: 'The relevant release label on the PR'
+runs:
+  using: 'node12'
+  main: 'index.js'

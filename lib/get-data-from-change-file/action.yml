@@ -1,5 +1,5 @@
-name: 'Check for a change file'
-description: 'Returns an npm command for updating the tag'
+name: 'Get data from change file'
+description: 'Returns data from a changefile'
 inputs:
   changedFiles:
     description: 'An array of files that have been changed or added'

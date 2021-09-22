@@ -1,0 +1,13 @@
+name: 'Check for a change file'
+description: 'Returns an npm command for updating the tag'
+inputs:
+  changedFiles:
+    description: 'An array of files that have been changed or added'
+    required: true
+outputs:
+  incrementation:
+    description: 'The level of incrementation that should be completed.'
+
+runs:
+  using: 'node12'
+  main: 'index.js'

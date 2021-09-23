@@ -1,0 +1,13 @@
+name: 'Update the changelog'
+description: 'Updates the changelog from a changes object'
+inputs:
+  changes:
+    description: 'An object configured for the Keep A Changelog spec'
+    required: true
+# outputs:
+#   incrementation:
+#     description: 'The level of incrementation that should be completed.'
+
+runs:
+  using: 'node12'
+  main: 'index.js'

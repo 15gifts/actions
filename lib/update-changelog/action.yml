@@ -13,6 +13,9 @@ inputs:
   tickets:
     description: 'A list of ticket urls that are relevant to the PR.'
     required: true
+outputs:
+  changelog:
+    description: 'Change log file with path.'
 
 runs:
   using: 'node12'

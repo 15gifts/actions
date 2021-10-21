@@ -4,9 +4,6 @@ inputs:
   changelog:
     description: 'CHANGELOG.md file with path.'
     required: true
-  tag:
-    description: 'new tag.'
-    required: true
   changes:
     description: 'An object containing all of the changes in the PR.'
     required: true

@@ -13,8 +13,8 @@ inputs:
   tickets:
     description: 'A list of ticket urls that are relevant to the PR.'
     required: true
-  branch:
-    description: 'current branch.'
+  repo:
+    description: 'current repo.'
     required: true  
 outputs:
   changelog:

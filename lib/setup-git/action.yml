@@ -12,6 +12,9 @@ inputs:
     description: 'The email to set'
     required: false
     default: 'action@github.com'
+  branch:
+    description: 'dummy just to test out git env variable'
+    required: false
 outputs:
   current_branch:
     description: 'Current branch'

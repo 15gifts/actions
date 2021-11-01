@@ -12,6 +12,9 @@ inputs:
     description: 'The email to set'
     required: false
     default: 'action@github.com'
+outputs:
+  token:
+    description: 'Github token.'
 
 runs:
   using: 'node12'

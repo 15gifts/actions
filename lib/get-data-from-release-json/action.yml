@@ -1,0 +1,19 @@
+name: 'Get data from release.json file'
+description: 'Returns data from a release.json file'
+inputs:
+  releaseFiles:
+    description: 'Array of changed files'
+    required: true
+outputs:
+  version:
+    description: 'Version number.'
+  type:
+    description: '"project" | "hotfix" | "patch "'
+  components:
+    description: 'An object containing versions of different components.'
+  deployment:
+    description: 'An object containing deployment details.'
+
+runs:
+  using: 'node12'
+  main: 'index.js'

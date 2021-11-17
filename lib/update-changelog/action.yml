@@ -12,6 +12,9 @@ inputs:
     required: true
   repo:
     description: 'current repo.'
+    required: true
+  tag:
+    description: 'tag.'
     required: true  
 outputs:
   changelog:

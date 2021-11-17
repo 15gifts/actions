@@ -1,7 +1,7 @@
 name: 'Get data from release.json file'
 description: 'Returns data from a release.json file'
 inputs:
-  releaseFiles:
+  changedFiles:
     description: 'Array of changed files'
     required: true
 outputs:

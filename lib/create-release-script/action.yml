@@ -1,0 +1,22 @@
+name: 'Create release.yml'
+description: 'Create release.yml.'
+inputs:
+  version:
+    description: 'Release version.'
+    required: true
+  type:
+    description: 'Release type.'
+    required: true
+  components:
+    description: 'A object containing deployment tags.'
+    required: true
+  deployment:
+    description: 'An object containing deployment information.'
+    required: true
+outputs:
+  release-file:
+    description: 'Release file with path.'
+
+runs:
+  using: 'node12'
+  main: 'index.js'

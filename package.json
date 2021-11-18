@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "A collection of github actions",
   "main": "n/a",
-  "type": "module",
   "scripts": {
     "lint": "esw lib/ --ext js",
     "lint:fix": "esw lib/ --ext js --fix",

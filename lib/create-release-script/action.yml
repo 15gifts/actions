@@ -14,8 +14,10 @@ inputs:
     description: 'An object containing deployment information.'
     required: true
 outputs:
-  release-file:
-    description: 'Release file with path.'
+  deploy-file:
+    description: 'Deploy file with path.'
+  config-file:
+    description: 'Config file with path.'
 
 runs:
   using: 'node12'

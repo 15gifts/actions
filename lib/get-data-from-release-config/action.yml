@@ -1,0 +1,23 @@
+name: 'Get data from release.json file'
+description: 'Returns data from a release.json file'
+inputs:
+  version:
+    description: 'Version number'
+    required: true
+outputs:
+  evo:
+    description: 'evo version.'
+  core:
+    description: 'core version'
+  fox:
+    description: 'fox version'
+  leap:
+    description: 'leap version'
+  leap2:
+    description: 'leap2 version'
+  vinyl:
+    description: 'vinyl version'
+
+runs:
+  using: 'node12'
+  main: 'index.js'

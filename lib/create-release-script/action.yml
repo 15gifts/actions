@@ -13,11 +13,12 @@ inputs:
   deployment:
     description: 'An object containing deployment information.'
     required: true
+  releasePath:
+    description: 'Release path where release.json is stored.'
+    required: true
 outputs:
-  deploy-file:
+  deployFile:
     description: 'Deploy file with path.'
-  config-file:
-    description: 'Config file with path.'
 
 runs:
   using: 'node12'

@@ -1,9 +1,6 @@
 name: 'Create release.yml'
 description: 'Create release.yml.'
 inputs:
-  version:
-    description: 'Release version.'
-    required: true
   deployment:
     description: 'An object containing deployment information.'
     required: true

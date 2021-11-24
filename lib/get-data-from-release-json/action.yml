@@ -4,6 +4,9 @@ inputs:
   changedFiles:
     description: 'Array of changed files'
     required: true
+  addedFiles:
+    description: 'Array of added files'
+    required: true
 outputs:
   version:
     description: 'Version number.'
@@ -13,6 +16,8 @@ outputs:
     description: 'An object containing versions of different components.'
   deployment:
     description: 'An object containing deployment details.'
+  releasePath:
+    description: 'Release path - where release.json is stored.'
 
 runs:
   using: 'node12'

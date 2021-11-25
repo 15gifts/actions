@@ -19,6 +19,18 @@ inputs:
 outputs:
   deployFile:
     description: 'Deploy file with path.'
+  evo:
+    description: 'evo version.'
+  core:
+    description: 'core version'
+  fox:
+    description: 'fox version'
+  leap:
+    description: 'leap version'
+  leap2:
+    description: 'leap2 version'
+  vinyl:
+    description: 'vinyl version'
 
 runs:
   using: 'node12'

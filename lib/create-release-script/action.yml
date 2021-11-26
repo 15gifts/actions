@@ -31,6 +31,8 @@ outputs:
     description: 'leap2 version'
   vinyl:
     description: 'vinyl version'
+  status:
+    description: 'release status'
 
 runs:
   using: 'node12'

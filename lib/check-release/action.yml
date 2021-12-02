@@ -7,6 +7,9 @@ inputs:
   releasePath:
     description: 'Release path where release.json is stored.'
     required: true
+outputs:
+  delete-flag:
+    description: 'return 1 if file has been deleted'
 
 runs:
   using: 'node12'

@@ -8,4 +8,3 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 /.cache-loader
-node_modules/cache/

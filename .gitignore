@@ -8,3 +8,8 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 /.cache-loader
+node_modules/cache/
+node_modules/@actions/core/
+node_modules/minimist/
+node_modules/mkdirp/
+node_modules/npm-install/node_modules/cache/

@@ -15,7 +15,13 @@ inputs:
     required: true
   tag:
     description: 'tag.'
-    required: true  
+    required: true
+  changedFiles:
+    description: 'An array of files that have been changed or added'
+    required: true
+  addedFiles:
+    description: 'An array of files that have been changed or added'
+    required: true
 outputs:
   changelog:
     description: 'Change log file with path.'

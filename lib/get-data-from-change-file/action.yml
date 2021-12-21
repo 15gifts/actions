@@ -11,6 +11,8 @@ outputs:
     description: 'A list of ticket urls that are relevant to the PR.'
   changes:
     description: 'An object containing all of the changes in the PR.'
+  changeFile:
+    description: 'Change file'
 
 runs:
   using: 'node12'

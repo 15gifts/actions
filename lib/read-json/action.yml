@@ -4,6 +4,9 @@ inputs:
   json-file:
     description: 'json file with path.'
     required: true
+  key:
+    description: 'return value of specific key'
+    required: false
 outputs:
   json-contents:
     description: 'Contents of file in json.'

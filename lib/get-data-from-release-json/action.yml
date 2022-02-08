@@ -18,6 +18,8 @@ outputs:
     description: 'An object containing deployment details.'
   releasePath:
     description: 'Release path - where release.json is stored.'
+  releaseJsonContent:
+    description: 'Entire content of release json.'
 
 runs:
   using: 'node12'

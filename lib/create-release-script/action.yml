@@ -16,6 +16,9 @@ inputs:
   releasePath:
     description: 'Release path where release.json is stored.'
     required: true
+  releaseJsonContent:
+    description: 'Release json content.'
+    required: true
 outputs:
   deployFile:
     description: 'Deploy file with path.'

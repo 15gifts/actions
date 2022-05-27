@@ -1,0 +1,15 @@
+name: 'Notify slack channel'
+description: 'Pass a message to a slack channel'
+inputs:
+  changeFile:
+    description: '.changes file path'
+    required: true
+  filesModified:
+    description: 'A list of files modified.'
+    required: true
+  filesAdded:
+    description: 'A list of files added.'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'

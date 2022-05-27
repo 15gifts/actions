@@ -12,6 +12,7 @@ inputs:
     description: 'The email to set'
     required: false
     default: 'action@github.com'
+
 runs:
   using: 'node12'
   main: 'index.js'

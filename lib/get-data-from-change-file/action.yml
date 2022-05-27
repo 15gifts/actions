@@ -1,0 +1,19 @@
+name: 'Get data from change file'
+description: 'Returns data from a changefile'
+inputs:
+  changedFiles:
+    description: 'An array of files that have been changed or added'
+    required: true
+outputs:
+  incrementation:
+    description: 'The level of incrementation that should be completed.'
+  tickets:
+    description: 'A list of ticket urls that are relevant to the PR.'
+  changes:
+    description: 'An object containing all of the changes in the PR.'
+  changeFile:
+    description: 'Change file'
+
+runs:
+  using: 'node12'
+  main: 'index.js'

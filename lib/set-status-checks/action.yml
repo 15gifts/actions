@@ -12,5 +12,5 @@ outputs:
     description: An array of the checks active before the action runs, useful for re-enabling any configured checks
 
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'

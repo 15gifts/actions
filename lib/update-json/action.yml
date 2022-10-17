@@ -14,5 +14,5 @@ inputs:
     description: 'A list of values to map to the provided keys'
     required: true
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'

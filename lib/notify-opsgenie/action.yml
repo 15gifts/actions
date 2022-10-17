@@ -21,5 +21,5 @@ inputs:
                  Alias is used to find an alert to close if the job was successful.
     required: false
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'

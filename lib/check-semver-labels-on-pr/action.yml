@@ -8,5 +8,5 @@ outputs:
   match:
     description: 'The relevant release label on the PR'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'

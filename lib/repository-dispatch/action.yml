@@ -18,5 +18,5 @@ inputs:
     description: 'An object containing the payload to send with the event as the client_payload'
     required: false
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'

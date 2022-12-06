@@ -1,11 +1,8 @@
 name: 'Get data from release.json file'
 description: 'Returns data from a release.json file'
 inputs:
-  changedFiles:
-    description: 'Array of changed files'
-    required: true
-  addedFiles:
-    description: 'Array of added files'
+  releaseJson:
+    description: 'release json file path'
     required: true
 outputs:
   version:
@@ -20,7 +17,9 @@ outputs:
     description: 'Release path - where release.json is stored.'
   releaseJsonContent:
     description: 'Entire content of release json.'
+  status:
+    description: 'Release status.'
 
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'

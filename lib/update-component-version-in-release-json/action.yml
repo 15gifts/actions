@@ -1,5 +1,5 @@
-name: 'Get data from release.json file'
-description: 'Returns data from a release.json file'
+name: 'update component version in release.json file'
+description: 'Update component version in release.json file'
 inputs:
   release-json:
     description: 'release json file with path.'

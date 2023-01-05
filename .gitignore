@@ -1,6 +1,7 @@
 npm-debug.log
 .eslintcache
 .vscode
+node_modules/
 
 # IntelliJ
 *.iml

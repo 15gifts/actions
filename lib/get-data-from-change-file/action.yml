@@ -4,6 +4,9 @@ inputs:
   changedFiles:
     description: 'An array of files that have been changed or added'
     required: true
+  branch:
+    description: 'Branch name'
+    required: false
 outputs:
   incrementation:
     description: 'The level of incrementation that should be completed.'

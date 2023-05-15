@@ -1,0 +1,42 @@
+name: 'Create release.yml'
+description: 'Create release.yml.'
+inputs:
+  version:
+    description: 'Release version.'
+    required: true
+  type:
+    description: 'Release type.'
+    required: true
+  components:
+    description: 'A object containing deployment tags.'
+    required: true
+  deployment:
+    description: 'An object containing deployment information.'
+    required: true
+  releasePath:
+    description: 'Release path where release.json is stored.'
+    required: true
+  releaseJsonContent:
+    description: 'Release json content.'
+    required: true
+outputs:
+  deployFile:
+    description: 'Deploy file with path.'
+  evo:
+    description: 'evo version.'
+  core:
+    description: 'core version'
+  fox:
+    description: 'fox version'
+  leap:
+    description: 'leap version'
+  leap2:
+    description: 'leap2 version'
+  vinyl:
+    description: 'vinyl version'
+  status:
+    description: 'release status'
+
+runs:
+  using: 'node12'
+  main: 'index.js'

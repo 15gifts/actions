@@ -1,0 +1,16 @@
+name: 'Update log'
+description: 'update or create log'
+inputs:
+  file:
+    description: 'Log file name with path'
+    required: true
+  log:
+    description: 'Message for logging.'
+    required: false
+  error:
+    description: 'Error message.'
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'index.js'

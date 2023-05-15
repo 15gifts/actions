@@ -1,0 +1,10 @@
+name: 'Check for a change file'
+description: 'Ensure that a change file has been created.'
+inputs:
+  changedFiles:
+    description: 'An array of files that have been changed or added'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'

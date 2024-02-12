@@ -1,0 +1,9 @@
+name: 'Close Passed Testrail Runs'
+description: 'Closes all test runs in a project with no fails/blocked/retest/untested'
+inputs:
+  project-id:
+    description: 'The Testrail project close runs for'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'

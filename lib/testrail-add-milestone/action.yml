@@ -1,0 +1,12 @@
+name: 'Add testrail milestone'
+description: 'Assigns a testrail milestone to a runs results'
+inputs:
+  project-id:
+    description: 'The Testrail project to add the milestone'
+    required: true
+  milestone-name:
+    description: 'The name for the milestone'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'

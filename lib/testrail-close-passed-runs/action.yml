@@ -4,6 +4,12 @@ inputs:
   project-id:
     description: 'The Testrail project close runs for'
     required: true
+  username:
+    description: 'Testrail username'
+    required: true
+  api-key:
+    description: 'Testrail Api Key'
+    required: true
 runs:
   using: 'node16'
   main: 'index.js'

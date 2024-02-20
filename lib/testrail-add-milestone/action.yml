@@ -7,6 +7,12 @@ inputs:
   milestone-name:
     description: 'The name for the milestone'
     required: true
+  username:
+    description: 'Testrail username'
+    required: true
+  api-key:
+    description: 'Testrail Api Key'
+    required: true
 runs:
   using: 'node16'
   main: 'index.js'

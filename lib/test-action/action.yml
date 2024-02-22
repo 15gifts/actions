@@ -1,9 +1,0 @@
-name: 'test action'
-description: 'testing information gathering'
-inputs:
-  github-token:
-    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
-    required: true
-runs:
-  using: 'node16'
-  main: 'index.js'

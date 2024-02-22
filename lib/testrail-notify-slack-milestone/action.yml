@@ -19,16 +19,16 @@ inputs:
     description: 'The emoji to diplay with the message'
     required: false
     default: ':robot_face:'
-  testRailusername:
+  testrail-username:
     description: 'The username to access the testrail API'
     required: true
-  testRailpassword:
+  testrail-api-key:
     description: 'The password to access the testrail API'
     required: true
-  projectId:
+  project-id:
     description: 'The project id of the testrail project'
     required: true
-  milestoneName:
+  milestone-name:
     description: 'The name of the milestone to get the test runs from'
     required: true
 runs:

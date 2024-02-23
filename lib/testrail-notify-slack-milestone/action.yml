@@ -1,0 +1,36 @@
+name: 'Testrail - Notifiy Slack with Milestone Information'
+description: 'sends information to slack based on the milestone of a test run'
+inputs:
+  github-token:
+    description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
+    required: true
+  url:
+    description: 'The url for the hook configured in slack'
+    required: true
+  channel:
+    description: 'A channel in your slack workspace'
+    required: false
+    default: '#alerts'
+  username:
+    description: 'The username to display with the message'
+    required: false
+    default: 'github-actions'
+  icon-emoji:
+    description: 'The emoji to diplay with the message'
+    required: false
+    default: ':robot_face:'
+  testrail-username:
+    description: 'The username to access the testrail API'
+    required: true
+  testrail-api-key:
+    description: 'The password to access the testrail API'
+    required: true
+  project-id:
+    description: 'The project id of the testrail project'
+    required: true
+  milestone-name:
+    description: 'The name of the milestone to get the test runs from'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'

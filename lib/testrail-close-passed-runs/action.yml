@@ -10,6 +10,9 @@ inputs:
   api-key:
     description: 'Testrail Api Key'
     required: true
+  close-all:
+    description: 'Close all runs, not just the ones that are passed'
+    required: false
 runs:
   using: 'node16'
   main: 'index.js'

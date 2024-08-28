@@ -17,5 +17,5 @@ inputs:
     description: 'Close all runs, not just the ones that are passed'
     required: false
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'index.js'

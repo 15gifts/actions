@@ -1,0 +1,10 @@
+name: 'Get package.json data'
+description: 'Read package.json file and extract data.'
+
+outputs:
+  version:
+    description: 'Version.'
+
+runs:
+  using: 'node12'
+  main: 'index.js'

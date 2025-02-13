@@ -4,10 +4,6 @@ inputs:
   github-token:
     description: 'Secret token to access githubs octkit API, normally GITHUB_TOKEN'
     required: true
-  use-npm:
-    description: 'Use npm version cli tooling'
-    required: false
-    default: 'true'
   commit-message-split:
     description: 'The message used to decide between a minor or patch release'
     required: false
@@ -19,7 +15,7 @@ inputs:
 
 outputs:
   version:
-    description: 'The npm command to run'
+    description: 'The poetry command to run'
 runs:
   using: 'node16'
   main: 'index.js'

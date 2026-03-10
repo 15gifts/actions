@@ -1,0 +1,16 @@
+name: 'update component version in release.json file'
+description: 'Update component version in release.json file'
+inputs:
+  release-json:
+    description: 'release json file with path.'
+    required: true
+  component:
+    description: 'component to update eg: evo, core, vinyl, leap, fox'
+    required: true
+  version:
+    description: 'version for that component'
+    required: true
+
+runs:
+  using: 'node16'
+  main: 'index.js'

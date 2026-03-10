@@ -1,0 +1,13 @@
+name: 'Get data from release.json file'
+description: 'Returns data from a release.json file'
+inputs:
+  release-json:
+    description: 'release json file with path.'
+    required: true
+  status:
+    description: 'status to be changed to.'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
